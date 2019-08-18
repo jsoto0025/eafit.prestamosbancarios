@@ -9,3 +9,10 @@
 /code/labs/SLNPrestamosPL/.vs/SLNPrestamosPL/v16/Server/sqlite3
 /code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos/bin/Debug/netstandard2.0
 /code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos/obj/Debug/netstandard2.0
+/code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.Android/bin/*
+/code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.Android/obj/Debug/
+/code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.Android/obj/Debug/81/**/
+/code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.Android/obj/
+/code/labs/SLNPrestamosPL/.vs/SLNPrestamosPL/DesignTimeBuild
+/code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.Android/AppPrestamos.Android.csproj.user
+/code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.iOS/AppPrestamos.iOS.csproj.user
