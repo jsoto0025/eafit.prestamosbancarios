@@ -1,6 +1,17 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
+/**/bin/
+/**/debug/
+/**/Debug/
+obj/
+bin/
+/**/obj/
+/**/bin/
+*.suo
+.vs/
+/.vscode
+/**/Debug/81/
 
 /code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.UWP/bin/x86/Debug
 /code/labs/SLNPrestamosPL/AppPrestamos/AppPrestamos.UWP/obj/ARM/Debug
