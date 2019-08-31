@@ -1,0 +1,643 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="feature" parent="0" visible="0"/>
+    <root label="R1" type="root" id="1">
+      <mxCell style="strokeWidth=3" vertex="1" parent="feature">
+        <mxGeometry x="340" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </root>
+    <concrete label="F1" type="concrete" selected="true" id="2">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="50" y="100" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F2" type="concrete" selected="true" id="3">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="240" y="100" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F3" type="concrete" selected="true" id="4">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry y="200" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F4" type="concrete" selected="false" id="5">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="110" y="200" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F10" type="concrete" selected="false" id="7">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="480" y="280" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F11" type="concrete" selected="true" id="8">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="610" y="200" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F9" type="concrete" selected="false" id="10">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="370" y="280" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F5" type="concrete" selected="false" id="13">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="220" y="200" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F8" type="concrete" selected="false" id="14">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="260" y="280" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <rel_concrete_root type="relation" relType="mandatory" id="15">
+      <mxCell edge="1" parent="feature" source="2" target="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_root>
+    <rel_concrete_root type="relation" relType="mandatory" id="16">
+      <mxCell edge="1" parent="feature" source="3" target="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_root>
+    <rel_concrete_concrete type="relation" relType="mandatory" id="19">
+      <mxCell edge="1" parent="feature" source="4" target="3">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_concrete>
+    <rel_concrete_concrete type="relation" relType="optional" id="20">
+      <mxCell edge="1" parent="feature" source="5" target="3">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_concrete>
+    <rel_concrete_concrete type="relation" relType="optional" id="21">
+      <mxCell edge="1" parent="feature" source="13" target="3">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_concrete>
+    <rel_concrete_concrete type="relation" relType="requires" id="22">
+      <mxCell edge="1" parent="feature" source="13" target="14">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_concrete>
+    <abstract label="F6" type="abstract" id="104">
+      <mxCell style="strokeWidth=2" vertex="1" parent="feature">
+        <mxGeometry x="460" y="100" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </abstract>
+    <abstract label="F7" type="abstract" id="105">
+      <mxCell style="strokeWidth=2" vertex="1" parent="feature">
+        <mxGeometry x="660" y="100" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </abstract>
+    <rel_abstract_root type="relation" relType="optional" id="106">
+      <mxCell edge="1" parent="feature" source="104" target="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_root>
+    <rel_abstract_root type="relation" relType="optional" id="107">
+      <mxCell edge="1" parent="feature" source="105" target="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_root>
+    <rel_abstract_abstract type="relation" relType="excludes" id="108">
+      <mxCell edge="1" parent="feature" source="104" target="105">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_abstract>
+    <rel_concrete_abstract type="relation" relType="mandatory" id="109">
+      <mxCell edge="1" parent="feature" source="8" target="105">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_concrete_abstract type="relation" relType="optional" id="110">
+      <mxCell edge="1" parent="feature" source="14" target="104">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_concrete_abstract type="relation" relType="optional" id="111">
+      <mxCell edge="1" parent="feature" source="10" target="104">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_concrete_abstract type="relation" relType="optional" id="112">
+      <mxCell edge="1" parent="feature" source="7" target="104">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <concrete label="F12" type="concrete" selected="false" id="118">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="590" y="280" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <rel_concrete_abstract type="relation" relType="mandatory" id="121">
+      <mxCell edge="1" parent="feature" source="118" target="104">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <concrete label="F13" type="concrete" selected="true" id="122">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="720" y="200" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <rel_concrete_abstract type="relation" relType="mandatory" id="123">
+      <mxCell edge="1" parent="feature" source="122" target="105">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <abstract label="C1" type="abstract" id="131">
+      <mxCell style="strokeWidth=2" vertex="1" parent="feature">
+        <mxGeometry x="270" y="400" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </abstract>
+    <abstract label="C2" type="abstract" id="132">
+      <mxCell style="strokeWidth=2" vertex="1" parent="feature">
+        <mxGeometry x="460" y="400" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </abstract>
+    <rel_abstract_concrete type="relation" relType="optional" id="133">
+      <mxCell edge="1" parent="feature" source="131" target="10">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_concrete>
+    <rel_abstract_abstract type="relation" relType="excludes" id="134">
+      <mxCell edge="1" parent="feature" source="131" target="132">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_abstract>
+    <rel_concrete_abstract type="relation" relType="requires" id="135">
+      <mxCell edge="1" parent="feature" source="7" target="132">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_abstract_concrete type="relation" relType="optional" id="136">
+      <mxCell edge="1" parent="feature" source="132" target="10">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_concrete>
+    <mxCell id="component" parent="0" visible="0"/>
+    <component label="nav-menu" type="component" id="37">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="40" y="70" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="productos" type="component" id="38">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="320" y="70" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="pagos" type="component" id="39">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="580" y="70" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="tarjeta-credito-virtual" type="component" id="41">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="40" y="190" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="pago-tc-virtual" type="component" id="42">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="320" y="180" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="cuenta-corriente" type="component" id="43">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="320" y="400" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="credito-rotativo" type="component" id="45">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="40" y="310" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="credito-empresas" type="component" id="46">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="40" y="530" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="credito-libre-inversion" type="component" id="47">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="40" y="420" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="cuenta-ahorros" type="component" id="48">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="320" y="290" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="autenticar-empresas" type="component" id="49">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="580" y="180" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="autenticar-personas" type="component" id="50">
+      <mxCell style="shape=component" vertex="1" parent="component">
+        <mxGeometry x="580" y="290" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <file label="nav-menu-presentacion" type="file" filename="nav-menu.component.html" destination="app\nav-menu\nav-menu.component.html" id="51">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="50" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="52">
+      <mxCell edge="1" parent="component" source="51" target="37">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="listaProductoTC" type="file" filename="listaTC.html" destination="" id="53">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="170" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioTC" type="file" filename="tarjeta-credito-virtual.service.ts" destination="services\tarjeta-credito-virtual.service.ts" id="54">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="220" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="55">
+      <mxCell edge="1" parent="component" source="53" target="41">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="56">
+      <mxCell edge="1" parent="component" source="54" target="41">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="listaProductoRotativo" type="file" filename="listaRotativo.html" destination="" id="57">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="280" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioRotativo" type="file" filename="credito-rotativo.service.ts" destination="services\credito-rotativo.service.ts" id="58">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="330" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="59">
+      <mxCell edge="1" parent="component" source="57" target="45">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="60">
+      <mxCell edge="1" parent="component" source="58" target="45">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="listaProductoLibreInversion" type="file" filename="listaLibreInversion.html" destination="" id="61">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="390" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioLibreInversion" type="file" filename="credito-libre-inversion.service.ts" destination="services\credito-libre-inversion.service.ts" id="62">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="440" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="63">
+      <mxCell edge="1" parent="component" source="61" target="47">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="64">
+      <mxCell edge="1" parent="component" source="62" target="47">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="listaProductoEmpresarial" type="file" filename="listaEmpresarial.html" destination="" id="65">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="500" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioEmpresarial" type="file" filename="credito-empresas.service.ts" destination="services\credito-empresas.service.ts" id="66">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="550" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="67">
+      <mxCell edge="1" parent="component" source="65" target="46">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="68">
+      <mxCell edge="1" parent="component" source="66" target="46">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="listaProductos" type="file" filename="productos.component.html" destination="app\productos\productos.component.html" id="69">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="70" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="70">
+      <mxCell edge="1" parent="component" source="69" target="38">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="opcionPagos" type="file" filename="pagos.html" destination="" id="72">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="710" y="70" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="73">
+      <mxCell edge="1" parent="component" source="72" target="39">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="opcionPagoTC" type="file" filename="OpcionPagoTC.html" destination="" id="75">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="150" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="opcionPagoAhorros" type="file" filename="OpcionPagoAhorros.html" destination="" id="76">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="260" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="opcionPagoCorriente" type="file" filename="OpcionPagoCorriente.html" destination="" id="77">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="370" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioPagoTC" type="file" filename="tc-virtual.service.ts" destination="services\tc-virtual.service.ts" id="78">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="200" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioPagoAhorros" type="file" filename="cuenta-ahorros.service.ts" destination="services\cuenta-ahorros.service.ts" id="79">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="310" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioPagoCorriente" type="file" filename="cuenta-corriente.service.ts" destination="services\cuenta-corriente.service.ts" id="80">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="450" y="420" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="81">
+      <mxCell edge="1" parent="component" source="80" target="43">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="82">
+      <mxCell edge="1" parent="component" source="77" target="43">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="83">
+      <mxCell edge="1" parent="component" source="79" target="48">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="84">
+      <mxCell edge="1" parent="component" source="76" target="48">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="85">
+      <mxCell edge="1" parent="component" source="78" target="42">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="86">
+      <mxCell edge="1" parent="component" source="75" target="42">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="iniciarSesionEmpresa" type="file" filename="IniciarSesionEmpresa.html" destination="" id="89">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="710" y="150" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioSesionEmpresa" type="file" filename="autenticar-empresas.service.ts" destination="services\autenticar-empresas.service.ts" id="90">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="710" y="200" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="iniciarSesionPersona" type="file" filename="IniciarSesionPersona.html" destination="" id="91">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="710" y="260" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <file label="servicioSesionPersona" type="file" filename="autenticar-personas.service.ts" destination="services\autenticar-personas.service.ts" id="92">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="710" y="310" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="94">
+      <mxCell edge="1" parent="component" source="89" target="49">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="95">
+      <mxCell edge="1" parent="component" source="90" target="49">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="96">
+      <mxCell edge="1" parent="component" source="91" target="50">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <rel_file_component type="relation" id="97">
+      <mxCell edge="1" parent="component" source="92" target="50">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <file label="nav-menu-component" type="file" filename="nav-menu.component.ts" destination="app\nav-menu\nav-menu.component.ts" id="138">
+      <mxCell style="shape=file" vertex="1" parent="component">
+        <mxGeometry x="190" y="110" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </file>
+    <rel_file_component type="relation" id="139">
+      <mxCell edge="1" parent="component" source="138" target="37">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_file_component>
+    <mxCell id="binding_feature_component" parent="0"/>
+    <concrete label="F1" type="concrete" selected="true" id="clon2">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="20" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F2" type="concrete" selected="true" id="clon3">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="80" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F3" type="concrete" selected="true" id="clon4">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="140" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F4" type="concrete" selected="false" id="clon5">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="200" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F10" type="concrete" selected="false" id="clon7">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="340" y="20" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F11" type="concrete" selected="true" id="clon8">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="340" y="80" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F9" type="concrete" selected="false" id="clon10">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="380" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F5" type="concrete" selected="false" id="clon13">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="260" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F8" type="concrete" selected="false" id="clon14">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="70" y="320" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <component label="nav-menu" type="component" id="clon37">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="470" y="200" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="productos" type="component" id="clon38">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="20" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="pagos" type="component" id="clon39">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="80" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="tarjeta-credito-virtual" type="component" id="clon41">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="320" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="pago-tc-virtual" type="component" id="clon42">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="260" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="cuenta-corriente" type="component" id="clon43">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="200" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="credito-rotativo" type="component" id="clon45">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="380" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="credito-empresas" type="component" id="clon46">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="470" y="80" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="credito-libre-inversion" type="component" id="clon47">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="470" y="20" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="cuenta-ahorros" type="component" id="clon48">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="200" y="140" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="autenticar-empresas" type="component" id="clon49">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="470" y="260" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <component label="autenticar-personas" type="component" id="clon50">
+      <mxCell style="shape=component;fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="470" y="140" width="100" height="40" as="geometry"/>
+      </mxCell>
+    </component>
+    <rel_concrete_component type="relation" id="99">
+      <mxCell edge="1" parent="binding_feature_component" source="clon2" target="clon38">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="100">
+      <mxCell edge="1" parent="binding_feature_component" source="clon3" target="clon39">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="101">
+      <mxCell edge="1" parent="binding_feature_component" source="clon4" target="clon48">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="102">
+      <mxCell edge="1" parent="binding_feature_component" source="clon5" target="clon43">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="103">
+      <mxCell edge="1" parent="binding_feature_component" source="clon13" target="clon42">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="113">
+      <mxCell edge="1" parent="binding_feature_component" source="clon14" target="clon41">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="114">
+      <mxCell edge="1" parent="binding_feature_component" source="clon10" target="clon45">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="116">
+      <mxCell edge="1" parent="binding_feature_component" source="clon7" target="clon47">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="117">
+      <mxCell edge="1" parent="binding_feature_component" source="clon8" target="clon46">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <concrete label="F12" type="concrete" selected="false" id="clon118">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="340" y="140" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="F13" type="concrete" selected="true" id="clon122">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="340" y="260" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <rel_concrete_component type="relation" id="124">
+      <mxCell edge="1" parent="binding_feature_component" source="clon118" target="clon50">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="125">
+      <mxCell edge="1" parent="binding_feature_component" source="clon122" target="clon49">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="129">
+      <mxCell edge="1" parent="binding_feature_component" source="clon118" target="clon37">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="130">
+      <mxCell edge="1" parent="binding_feature_component" source="clon122" target="clon37">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_component>
+  </root>
+</mxGraphModel>

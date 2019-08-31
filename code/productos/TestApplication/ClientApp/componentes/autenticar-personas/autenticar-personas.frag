@@ -1,0 +1,21 @@
+ Fragment autenticar-personas { 
+   Action: add
+   Priority: high
+   FragmentationPoints: menu-autenticar
+   PointBracketsLan: html
+   Destinations: nav-menu-presentacion
+   SourceCode: [ALTERCODE-FRAG]<li class="nav-item">
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Iniciar sesión</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <div class="container">
+        <label>Usuario</label>
+        <input type="text" />
+        <label>Contraseña</label>
+        <input type="text" />
+        <button (click)="autenticarPersona()" type="button" style="margin-top:10px;" class="btn btn-outline-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</li>[/ALTERCODE-FRAG]
+}

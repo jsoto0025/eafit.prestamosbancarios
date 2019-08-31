@@ -1,0 +1,31 @@
+<header>
+  <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3'>
+    <div class="container">
+      <a class="navbar-brand" [routerLink]='["/"]'><Strong>e-Card</Strong> Tarjeta de crédito virtual Banco YY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded" (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]='{"show": isExpanded}'>
+        <ul class="navbar-nav flex-grow">
+
+          <!-- B-menu-autenticar -->
+          <li class="nav-item">
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Iniciar sesión</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <div class="container">
+                  <label>Usuario</label>
+                  <input type="text" />
+                  <label>Contraseña</label>
+                  <input type="text" />
+                  <button (click)="autenticarPersona()" type="button" style="margin-top:10px;" class="btn btn-outline-primary">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

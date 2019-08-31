@@ -1,0 +1,68 @@
+<h1>Listado de productos</h1>
+<p>Estos son los productos que usted tiene disponibles</p>
+<ul>
+  <!-- B-lista-productos -->
+  <li>
+    <p>
+      <button type="button" class="btn btn-outline-primary" (click)="isCollapsed3 = !isCollapsed3"
+              [attr.aria-expanded]="isCollapsed3" aria-controls="collapseExample">
+        Crédito empresas Nro 12345 $5000
+      </button>
+    </p>
+    <div id="collapseExample" [ngbCollapse]="!isCollapsed3">
+      <div class="card">
+        <div class="card-body">
+          Datos del crédito
+          <br />
+          Valor desembolsado      <strong>$5000</strong>
+          <br />
+          <br />
+          Valor a pagar
+          <br />
+          Total   <strong>$2500</strong>
+          <br />
+          Mínimo   <strong>$50</strong>
+          <!-- B-opciones-pagos -->
+                   <div class="card-body">
+                     <p>
+                       <strong>Pagar</strong>
+                       <br />
+                       Seleccione el medio de pago con el que desea cancelar el crédito
+                     </p>
+
+                     <!-- B-lista-pagos -->
+                     <button style="margin:10px;" class="btn btn-outline-primary" (click)="isCollapsed5 = !isCollapsed5"
+                             [attr.aria-expanded]="isCollapsed5">
+                       Cuenta de ahorros
+                     </button>
+                     <div id="collapseExample" [ngbCollapse]="!isCollapsed5">
+                       <div class="card">
+                         <p class="card-body">
+                           Tipo de usuario
+                           <br />
+                           <select>
+                             <option>Persona natural</option>
+                             <option>Persona jurídica</option>
+                             <option>Empresa</option>
+                           </select>
+                           <br />
+                           Banco
+                           <br />
+                           <select>
+                             <option>Bancolombia</option>
+                             <option>Banco de bogotá</option>
+                             <option>Tequendama</option>
+                           </select>
+                           <br />
+                           <button style="margin-top:15px;" class="btn btn-outline-primary">Pagar</button>
+                         </p>
+                       </div>
+                     </div>
+
+                   </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<p>Universidad <code>Eafit</code> Líneas de productos de software.</p>
